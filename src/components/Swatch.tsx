@@ -112,10 +112,10 @@ export function Swatch(props: SwatchProps) {
             }}
         >
             <animated.div className="swatch-overlay" style={overlaySpring}>
-                {copied === true ? (
-                    <ClipboardCheck color={contrastColor(props.color)} />
-                ) : (
+                {copied === "error" ? (
                     <span>Failed to copy!</span>
+                ) : (
+                    <ClipboardCheck color={contrastColor(props.color)} />
                 )}
             </animated.div>
             {hex.clipped && !props.p3Supported && (

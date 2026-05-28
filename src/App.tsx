@@ -19,7 +19,10 @@ export function App() {
             <>
                 <div className="app">
                     <div className="header">
-                        <h1 className="text">Hyperworks Palette</h1>
+                        <h1 className="text">
+                            <img src="hyperworks.svg" alt="Hyperworks" />
+                            Hyperworks Palette
+                        </h1>
 
                         <div className="header-controls">
                             <TargetSlider />
